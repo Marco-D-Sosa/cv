@@ -1,0 +1,27 @@
+# ==== LaTeX ====
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.figlist
+*.makefile
+*.fmt
+*.mtc
+*.mtc0
+*.maf
+*.xdv
+*~
+*.bak
+*.pdf
