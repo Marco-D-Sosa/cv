@@ -1,0 +1,186 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- PAQUETES ---
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1.2cm, top=0cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=True,
+    urlcolor=white,
+    linkcolor=white
+}
+\usepackage{lmodern}
+
+% --- CONFIGURACIÓN DE TIPOGRAFÍA Y PÁGINA ---
+\pagestyle{empty}
+\renewcommand{\familydefault}{\sfdefault} % Fuente sans-serif moderna
+\setlength{\parindent}{0pt}
+
+% --- DEFINICIÓN DE COLORES ---
+\definecolor{headerbg}{HTML}{004182}   % Borgoña / Guinda del encabezado
+\definecolor{darktext}{HTML}{000000}   % Negro puro para todo el texto principal
+\definecolor{subtext}{HTML}{222222}    % Subtítulos oscuros para alta legibilidad
+\definecolor{linecolor}{HTML}{666666}  % Líneas divisoras visibles
+
+% --- FORMATO DE LISTAS ---
+\setlist[itemize]{leftmargin=1.4em, itemsep=4pt, parsep=0pt, topsep=4pt}
+
+\begin{document}
+
+% ==========================================
+% ENCABEZADO / BANNER SUPERIOR
+% ==========================================
+\begin{tikzpicture}[remember picture, overlay]
+  % Fondo borgoña
+  \fill[headerbg] (current page.north west) rectangle ([yshift=-6.5cm]current page.north east);
+\end{tikzpicture}
+
+\vspace*{0.4cm}
+
+\begin{minipage}[t]{0.62\textwidth}
+    \color{white}
+    \vspace{0.1cm}
+    {\fontsize{32pt}{36pt}\selectfont \bfseries MARCO}\\[4pt]
+    {\fontsize{30pt}{34pt}\selectfont \bfseries DIAZ DE SOSA}
+    
+    \vspace{0.2cm}
+    {\large \bfseries \MakeUppercase{Senior Economics Student}}
+    
+    \vspace{0.4cm}
+    % Datos de contacto con íconos
+    {\small
+    \faPhone*\hspace{0.4em}11 5004-6420 \hfill 
+    
+    \faEnvelope\hspace{0.4em}marcodiazdesosa@gmail.com \hfill 
+
+    \faLinkedin\hspace{0.4em}\href{https://www.linkedin.com/in/marco-diaz-de-sosa}{\color{white}{linkedin.com/in/marco-diaz-de-sosa}} \hfill 
+    
+    \faGithub\hspace{0.4em}\href{https://github.com/Marco-D-Sosa}{github.com/Marco-D-Sosa} \hfill 
+    }
+    
+\end{minipage}%
+\begin{minipage}[t]{0.38\textwidth}
+    \centering
+    \vspace{0.0cm}
+    % Foto de perfil circular
+    \begin{tikzpicture}
+        \node[circle, minimum size=4.0cm, path picture={
+            \node at (path picture bounding box.center) {
+                \includegraphics[width=4.0cm]{Foto_CV.jpg} 
+            };
+        }] {};
+    \end{tikzpicture}
+\end{minipage}
+
+\color{darktext}
+
+
+% ==========================================
+% PERFIL PROFESIONAL
+% ==========================================
+\section*{}
+{\Large \bfseries \faUser\hspace{0.4em} PROFESSIONAL PROFILE}
+\vspace{0.4em}
+\hrule height 1pt \color{linecolor}
+\vspace{1em}
+
+{\large \color{darktext}
+Economist focused on firm modeling and empirical estimation in competitive environments. I combine quantitative analysis (Python, Stata) with the ability to communicate methodologies and findings to non-technical audiences, a skill developed through my university teaching role. I excel in autonomous problem-solving and the automation of analytical routines for positions in industrial organization (pricing, consulting, competition and mergers, commercial planning).
+}
+
+\vspace{1.8em}
+
+% ==========================================
+% EDUCACIÓN
+% ==========================================
+{\Large \color{darktext} \bfseries \faGraduationCap\hspace{0.5em} EDUCATION}
+\vspace{0.4em}
+\hrule height 1pt \color{linecolor}
+\vspace{0.2em}
+
+\begin{itemize}[label=\small$\bullet$, leftmargin=1.4em, itemsep=0.8em]
+\color{darktext}
+    \item {\large \textbf{BACHELOR'S DEGREE IN ECONOMICS}}\\
+    {\color{subtext}\textit{Universidad Nacional de La Plata - In progress}}
+    \begin{itemize}[label=\tiny$\bullet$]
+        \item {\large \color{subtext} Senior year student (1 course remaining). GPA: 7.61}
+    \end{itemize}
+
+\end{itemize}
+
+\vspace{1.0em}
+
+
+% ==========================================
+% EXPERIENCIA
+% ==========================================
+{\Large \color{darktext} \bfseries \faGraduationCap\hspace{0.5em} ACADEMIC AND TEACHING EXPERIENCE}
+\vspace{0.4em}
+\hrule height 1pt \color{linecolor}
+\vspace{0.2em}
+
+\begin{itemize}[label=\small$\bullet$, leftmargin=1.4em, itemsep=0.8em]
+\color{darktext}
+    \item {\large \textbf{Teaching Assistant for Statistics for Economists II}}\\
+    {\color{subtext}\textit{Universidad Nacional de La Plata - 2025}}
+    \begin{itemize}[label=\tiny$\bullet$]
+        \item {\large \color{subtext} Assisted students in solving practical assignments, guiding the interpretation of statistical models and inference, and supported the teaching staff with the logistics and supervision of in-person evaluations.}
+        \item {\large \color{subtext} Outstanding performance with formal certification from the department and letter of recommendation available upon request.}
+    \end{itemize}
+
+\end{itemize}
+
+\vspace{1.0em}
+
+
+
+% ==========================================
+% HABILIDADES
+% ==========================================
+{\Large \color{darktext} \bfseries \faPuzzlePiece\hspace{0.5em} SKILLS AND LANGUAGES}
+\vspace{0.4em}
+\hrule height 1pt \color{linecolor}
+\vspace{0.2em}
+
+\begin{itemize}[label=\small$\bullet$, leftmargin=1.4em, itemsep=5pt]
+    \color{darktext}
+    \item {\large Programming and Data Analysis: Python, Stata, SQL}
+    \item {\large Tools and Environments: Git/GitHub, LaTeX}
+    \item {\large Visualization and Business Intelligence: Power BI}    
+    \item {\large Office (Word, PowerPoint, Excel)}
+    \item {\large Languages: Spanish (Native), English (Intermediate - B1)}
+\end{itemize}
+
+\vspace{1.5em}
+
+
+% ==========================================
+% GitHub
+% ==========================================
+{\Large \color{darktext} \bfseries \faGlobe\hspace{0.5em} HIGHLIGHTED PROJECTS}
+\vspace{0.4em}
+\hrule height 1pt \color{linecolor}
+\vspace{0.2em}
+
+\begin{itemize}[label=\small$\bullet$, leftmargin=1.4em, itemsep=5pt]
+\color{darktext}
+    \item {\large Hedonic pricing and the cost of crime in CABA - Python, Stata (Group project)}
+     \begin{itemize}[label=\tiny$\bullet$]
+        \item {\large \color{subtext} Estimated the effect of insecurity on short-term rental prices in CABA using a panel data model (145,000+ observations). A 1\% increase in crime is associated with a 0.062\% decrease in price. {\color{linecolor} [Project available on GitHub]}}
+    \end{itemize}
+    
+    \item {\large Industrial organization models - Excel, Solver, VBA}
+     \begin{itemize}[label=\tiny$\bullet$]
+        \item {\large \color{subtext} Automated Cournot, Stackelberg, collusion, mergers (GUPPI, UPP, HHI), and price discrimination models, along with 15 other imperfect competition models, using VBA macros.}
+    \end{itemize}
+    
+\end{itemize}
+
+\end{document}
