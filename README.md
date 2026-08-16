@@ -4,11 +4,10 @@ LaTeX source code for my curriculum vitae.
 
 ## Structure
 
-├── cv.tex # Main document
-
 ├── .gitignore
-
-└── README.md
+├── README.md
+├── cv.tex # Main document
+└── cv_english.tex
 
 ## Design
 
@@ -23,7 +22,7 @@ This document does not use a pre-built class or template (moderncv, awesome-cv, 
 
 ### Option 1: Overleaf (recommended)
 1. Upload this repository as a new Overleaf project, or connect it directly via GitHub (Menu → GitHub → Import from GitHub).
-2. Make sure the main document is set to `cv.tex` (Menu → Settings → Main document).
+2. Make sure the main document is set to `cv.tex` or `cv_english.tex` (Menu → Settings → Main document).
 3. Verify the compiler is set to **pdfLaTeX**.
 4. Compile using the "Recompile" button.
 
