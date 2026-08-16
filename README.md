@@ -5,8 +5,11 @@ LaTeX source code for my curriculum vitae.
 ## Structure
 
 ├── .gitignore
+
 ├── README.md
+
 ├── cv.tex # Main document
+
 └── cv_english.tex
 
 ## Design
