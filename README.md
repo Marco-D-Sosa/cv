@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="cv-preview.png" alt="Vista previa del CV (Español)" width="500">
+</p>
+
+<p align="center">
+  <a href="CV_Marco_Diaz_de_Sosa.pdf">📄 Descargar CV (Español)</a> ·
+  <a href="CV_Marco_Diaz_de_Sosa_English.pdf">📄 Download CV (English)</a>
+</p>
+
 # CV — Diaz de Sosa, Marco
 
 LaTeX source code for my curriculum vitae.
@@ -8,9 +17,15 @@ LaTeX source code for my curriculum vitae.
 
 ├── README.md
 
-├── cv.tex # Main document
+├── CV_Marco_Diaz_de_Sosa.tex # Main document
 
-└── cv_english.tex
+├── CV_Marco_Diaz_de_Sosa_English.tex
+
+├── CV_Marco_Diaz_de_Sosa.pdf # Compiled version (ES)
+
+├── CV_Marco_Diaz_de_Sosa_English.pdf # Compiled version (EN)
+
+└── cv-preview-es.png # README preview image
 
 ## Design
 
@@ -19,20 +34,22 @@ This document does not use a pre-built class or template (moderncv, awesome-cv, 
 ## Requirements
 
 - LaTeX distribution (TeX Live 2025 or compatible)
-- Compiler: **pdfLaTeX**
+- Compiler: pdfLaTeX
 
 ## How to compile
 
 ### Option 1: Overleaf (recommended)
+
 1. Upload this repository as a new Overleaf project, or connect it directly via GitHub (Menu → GitHub → Import from GitHub).
 2. Make sure the main document is set to `cv.tex` or `cv_english.tex` (Menu → Settings → Main document).
-3. Verify the compiler is set to **pdfLaTeX**.
+3. Verify the compiler is set to `pdfLaTeX`.
 4. Compile using the "Recompile" button.
 
 ### Option 2: Local
-\`\`\`bash
+
+```bash
 pdflatex cv.tex
-\`\`\`
+```
 May need to run twice if the document includes cross-references or a table of contents.
 
 ## License
